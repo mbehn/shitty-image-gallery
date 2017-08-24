@@ -1,0 +1,13 @@
+#myGallery {}
+	.gallery-container { display: flex; background-color: lightgrey; position: relative; border-radius: 5px; box-shadow: 0px 0px 15px 3px;}
+		.left-nav, .right-nav { width: 50px;background-color: rgba(0,0,0,.1); transition: all .4s;}
+		.right-nav {border-radius: 0 5px 5px 0;}
+		.left-nav {border-radius: 5px 0 0 5px;}		
+		.left-nav:hover, .right-nav:hover { cursor: pointer; background-color: rgba(0,0,0,.3);}
+		.left-nav:hover .nav-carat, .right-nav:hover .nav-carat { color: lightblue; font-size: 36px}
+			.nav-carat { transition: all .3s; position: relative; top: 50%; width: 100%; text-align: center; font-size: 30px; color: lightgrey;}	
+		.gallery-image-container {top: 0; left: 0; max-width: 50px;}	
+			.gallery-image, .gallery-i { display:none;}
+			.current-image {}
+			.description-container { max-width: 300px; position: absolute; top: 15px; left: 60px; background-color: rgba(0,0,0,.4); padding: 5px; border-radius: 3px;}
+			.description-container p { color: lightgrey; }
